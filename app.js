@@ -7,15 +7,21 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// Database intialiseren
+// Database intialiseren + Configureren van passport
 
 var mongoose = require('mongoose');
+var passport = require('passport');
+
 require('./models/landen');
 require('./models/quiz');
+require('./models/user');
+
+require('./config/passport');
 
 mongoose.connect('mongodb://localhost/quizapp', function() {
   console.log('Mongoose connected. DB connection open');
 });
+
 
 // Routes configureren die REST routes voorstellen
 
@@ -39,6 +45,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+// Initialiseren van passport
+
+app.use(passport.initialize());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
