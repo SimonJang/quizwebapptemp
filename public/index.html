@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="quizApp">
+<head>
+    <title>Testing Node</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="/app/angular-route.min.js"></script>
+    <script src="/app/angularApp.js"></script>
+    <script src="/app//homeController.js"></script>
+</head>
+<body ng-controller="homeController">
+<div class="container-fluid">
+    <div class="row headerContainer">
+        <div class="row">
+                <ul class="nav-ul">
+                    <li class="nav-li" role="presentation"><a href="#/">Home</a></li>
+                    <li class="nav-li" role="presentation"><a href="#">Contact</a></li>
+                    <li class="nav-li" role="presentation"><a href="#">About</a></li>
+                    <li class="nav-li" role="presentation"><a href="#">Landen</a></li>
+                    <li class="nav-li" role="presentation"><a href="#">Profiel</a></li>
+                    <li class="nav-li" role="presentation"><a href="#">GitHub</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="row header header-container smallNav">
+        <h1 class="mainHeader">Landen Quiz</h1>
+        <h3 class="mainHeader-sm">TODO ZOEKEN CATCH PHRASE!</h3>
+    </div>
+    <div class="row headerContainer">
+        <div class="row">
+        <ul class="nav-ul">
+            <li class="nav-li" role="presentation" class="mainButtons"><a href="#">SPELEN</a></li>
+            <li class="nav-li" role="presentation" class="mainButtons"><a href="#">RANGSCHIKKING</a></li>
+            <li class="nav-li" role="presentation" class="mainButtons"><a href="#">MAAK EEN QUIZ</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-md-offset-3" ng-view>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr />
+                <div class="col-md-8">
+                </div>
+                <div class="col-md-4">
+                    <p class="muted pull-right">© Simon Jang, OLOD Web Applicaties V</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+a {
+    text-decoration: none;
+    color: #585858;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 25%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-li {
+    float: left;
+}
+
+.mainButtons {
+    font-family: 'Baloo Bhaina';
+    font-size: 24px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainPanel {
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #74AFAD;
+    color: white;
+}
+
+.panel {
+    background-color: #ECECEA;
+}
+
+body {
+    background-color: #ECECEA;
+}
+
+a:hover {
+    color: #ECECEA;
+    background-color: transparent;
+}
+
+.header-container {
+    border-bottom: 1px solid lightgray;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.mainHeader {
+    font-family:'Baloo Bhaina';
+    font-size: 56px;
+    text-align: center;
+}
+
+.teaserBtn {
+    background-color: #74AFAD;;
+    font-family: 'Baloo Bhaina';
+    font-size: 24px;
+    color:white;
+    padding: 1em 2em 1em 2em;
+    margin-left: 1em;
+}
+
+.teaserBtn:hover {
+    color:white;
+}
+
+.pageHeader {
+    font-family:'Baloo Bhaina';
+    font-size: 42px;
+    text-align: center;
+}
+
+.pageHeader-sm {
+    padding-top: 3em;
+    font-family: 'Baloo Bhaina';
+    font-size: 32px;
+    padding-left: 60%
+}
+
+.mainHeader-sm {
+    padding-top: 3em;
+    font-family: 'Baloo Bhaina';
+    font-size: 32px;
+    padding-left: 60%
+}
