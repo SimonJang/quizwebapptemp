@@ -4,7 +4,7 @@
 
 (function() {
     angular.module('quizApp')
-        .service('landenService', landenService)
+        .service('landenService', landenService);
     
     landenService.$inject = ['$http','GLOBALS', '$q']
 

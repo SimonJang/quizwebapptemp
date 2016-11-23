@@ -40,17 +40,13 @@
         }
     }
 
-    reeksController.$inject = ['$scope', '$location','$routeParams', 'landenService', 'GLOBALS']
+    reeksController.$inject = ['$scope', '$location','$routeParams','reeksBuilder']
 
-    function reeksController($scope, $location, $routeParams, landenService, GLOBALS) {
+    function reeksController($scope, $location, $routeParams, reeksBuilder) {
         var vm = this;
+        vm.aantal = $routeParams.id;
         vm.landen = [];
-
-        landenService.getAlleLandenWithQ(GLOBALS)
-            .then(function(landenReturn) {
-                vm.landen = landenReturn;
-            });
-
-
+        
+        vm.reeks = reeksBuilder.geefReeks(vm.aantal);
     }
 })();

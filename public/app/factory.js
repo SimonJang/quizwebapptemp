@@ -4,17 +4,28 @@
 
 (function() {
     angular.module('quizApp')
-        .factory('reeksBuilder', reeksBuilder)
+        .factory('reeksBuilder', reeksBuilder);
 
-    function reeksBuilder() {
-        this.landen = [];
+    reeksBuilder.$inject = ['landenService', 'GLOBALS'];
 
-        this.getLanden = function(arg) {
-            landen = arg;
-        }
+    function reeksBuilder(landenService, GLOBALS) {
+        var factory = {};
+        var landen = [];
 
-        var test;
-
+        landenService.getAlleLandenWithQ(GLOBALS)
+            .then(function(landenReturn) {
+                landen = landenReturn;
+            });
+        
+        factory.geefReeks = function(aantal) {
+            var max = landen.length;
+            var memory = [];
+            var reeks = [];
+            var nummer = Math.floor((Math.random() * max) + 0);
+            memory.push(nummer)
+        };
+        
+        return factory;
     }
 
 })();
