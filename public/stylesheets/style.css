@@ -6,6 +6,11 @@ a {
     color: #585858;
 }
 
+a:hover {
+    color: #ECECEA;
+    background-color: transparent;
+}
+
 .nav-ul {
     list-style-type: none;
     margin: 0;
@@ -50,15 +55,24 @@ body {
     background-color: #ECECEA;
 }
 
-a:hover {
-    color: #ECECEA;
-    background-color: transparent;
+.header > a {
+     color: black;
+     text-decoration: none;
 }
 
+.header > a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
 .header-container {
-    border-bottom: 1px solid lightgray;
     padding-top: 6em;
     padding-bottom: 6em;
+}
+
+.navBtnContainer {
+    margin-top: 2em;
 }
 
 .mainHeader {
@@ -67,35 +81,20 @@ a:hover {
     text-align: center;
 }
 
-.teaserBtn {
-    background-color: #74AFAD;;
-    font-family: 'Baloo Bhaina';
-    font-size: 24px;
-    color:white;
-    padding: 1em 2em 1em 2em;
-    margin-left: 1em;
-}
-
-.teaserBtn:hover {
-    color:white;
-}
-
-.pageHeader {
-    font-family:'Baloo Bhaina';
-    font-size: 42px;
-    text-align: center;
-}
-
-.pageHeader-sm {
-    padding-top: 3em;
-    font-family: 'Baloo Bhaina';
-    font-size: 32px;
-    padding-left: 60%
-}
 
 .mainHeader-sm {
-    padding-top: 3em;
     font-family: 'Baloo Bhaina';
-    font-size: 32px;
-    padding-left: 60%
+    font-size: 28px;
+    padding-left: 40%
 }
+
+.panel-body > p > a {
+    color: #74AFAD;
+    text-decoration: none;
+}
+
+.panel-body > p > a:hover {
+    color: black;
+}
+
+
